@@ -1,0 +1,120 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{listings}
+     
+\sloppy
+\title{Avaliação de desempenho de roteadores}
+  \vspace{-0.2cm}
+	\author{Eduardo Schulz\inst{1}}
+  \vspace{-0.2cm}
+\address{
+  Universidade do Vale do Rio dos Sinos (UNISINOS), São Leopoldo, RS -- Brasil
+  \vspace{-0.2cm}
+	%%\email{\{schulzEduardo\}@edu.unisinos.br;}
+	\email{schulzEduardo@edu.unisinos.br}
+}
+\begin{document} 
+
+\maketitle
+
+\begin{abstract}
+  This meta-paper describes the style to be used in articles and short papers
+  for SBC conferences. For papers in English, you should add just an abstract
+  while for the papers in Portuguese, we also ask for an abstract in
+  Portuguese (``resumo''). In both cases, abstracts should not have more than
+  10 lines and must be in the first page of the paper.
+\end{abstract}
+     
+\begin{resumo} 
+  Este meta-artigo descreve o estilo a ser usado na confecção de artigos e
+  resumos de artigos para publicação nos anais das conferências organizadas
+  pela SBC. É solicitada a escrita de resumo e abstract apenas para os artigos
+  escritos em português. Artigos em inglês deverão apresentar apenas abstract.
+  Nos dois casos, o autor deve tomar cuidado para que o resumo (e o abstract)
+  não ultrapassem 10 linhas cada, sendo que ambos devem estar na primeira
+  página do artigo.
+\end{resumo}
+
+
+\section{Introdução}
+
+
+\section{Fundamentação Teórica e Trabalhos Relacionados}
+
+Quando pensamos em roteadores geralmente temos em mente os equipamentos com \textit{hardware} especializado, como ASICs(\textit{Application-Specific Integrated Circuits}). Como o nome implica, são CIs com propósito único e podem ser usados para esta única função. Porém, as funções de um roteador não precisam ficar limitadas à um \textit{hardware} especializado, em muitos casos pode ser usado computadores convêncionais para a realização dessas funcionalidades.
+
+falar sobre trab [1] e [2]
+
+falar sobre outro trabalho.
+
+%%TODO adicionar referencias aos artigos de performance e comparacao entre asics e cpus.
+
+\section{Metodologia}
+% TODO adicionar uma forma de comparar um hardware convencional(asics)
+Foram definidos dois cenários principais que devem ser testados durante o trabalho:
+\begin{enumerate}
+	\item[A] Uma rede com dois \textit{hosts} conectados na mesma rede.
+	\item[B] Duas redes seperadas por um roteador com cada \textit{host} em redes diferentes. 
+\end{enumerate}
+
+Cada cenário será testado com uma série de testes de performance e estabilidade. Será também levado em conta a difença de consumo de recursos em ambos cenários. A ferramente principal desses testes será o iPerf3, que será configurado para enviar datagramas UDP de diversos tamanhos, durante um perido de 30 segundos 10 vezes.
+
+Também será testado o roteador com máquinas com recursos mais limitados e com máquinas com mais recursos computacionais. Os resultados desses testes devem ser comparados entre si e com valores que a rede teóricamente poderia atingir.
+
+Tem-se como hipótese que o cenário B terá um desempenho menor, principalmente quando o roteador possuir menos recursos computacionais. É esperado que essas operações que estaram sendo feitas por \textit{software} teram um desempenho menor que em \textit{hardware} especializado.
+
+
+\section{Avaliação de desempenho e funcionalidade}
+Nessa sessão será apresentado o os ambientes dos cenários de testes, principalmente como foram configurados e seus respectivos \textit{hardwares}. Também será exposto os resultados dos experimentos realizados neste trabalho.
+\subsection{Equipamentos}
+Como explicado na ??botar secao dos cenarios??, o testes serão realizados seguindo tais cenários com diversos equipamentos, que devem ser alterados dependendo do cenário selecionado.
+A coleta de métricas de consumo de processador, memória, entrada e saída de \textit{bits} pela interface de rede
+foram realizadas usando o \textit{software} Prometheus em conjunto com o Grafana para a visualização gráfica dos dados.
+
+%Para a realização dos cenários de testes foram criados \textit{testbeds} compostos por três computadores, um roteador e um \textit{switch}. 
+%\subsection{\textit{Testbed}}
+%Para a realização dos dois cenários de testes foi criado uma \textit{Testbed} composta por três máquinas rodando GNU/Linux.
+%Todas as máquinas estam equipadas com interfaces de redes \textit{Gigabit} para maior banda de tranfêrencia. 
+
+\subsubsection{\textit{Host} A}
+O \textit{Host} A foi definido como um \textit{laptop} Thinkpad T440s com um Intel\textregistered\space Core\texttrademark\space i5-4200U. Esta máquina está rodando NixOS com o \textit{kernel} Linux 6.1.79. %%Apenas foi necessário adicionar uma rota até o \textit{Host} B através do roteador para que o sistema funcione no cenário 2:
+
+\subsubsection{\textit{Host} B}
+O \textit{Host} B é um Raspberry Pi 3B. Este \textit{Single Board Computer} está rodando o Raspberry Pi OS, baseado na distribuição Debian Linux, com o \textit{kernel} Linux 6.1.21-v8+. %Como citado acima, este \textit{Host} tomara o \textit{hardware} do roteador e vice-versa. Também foi necessário adicionar uma rota, até o \textit{Host} A através do roteador para que o sistema funcione no cenário 2:
+
+\subsubsection{\textit{Host} C}
+Este computar está equipado com um Intel\textregistered\space Xeon\textregistered\space E5-2670 v3 com 12 núcleos e 24 \textit{threads}.
+O sistema operacional foi GNU/Linux, especificamente a distribuição NixOS usando o \textit{Linux 6.1.79}. Sendo o \textit{host} com as melhores especificações, ele também foi escolhido para hospedar o Grafana e Prometheus.
+
+
+\subsubsection{\textit{Host} D}
+Para este \textit{host} foi escolhido um TP-Link\textregistered\space TL-WR741ND com 5 portas. Este roteador foi configurado para executar o \textit{firmware} customizado OpenWRT, baseado no GNU/Linux. Com acesso privelegiado ao \textit{hardware} do roteador poderemos coletar muito mais informações do que um roteador COTS(\textit{Commercial-Off-The-Shelf}). Também poderemos comparar a performance entre um roteador \textbf{VSR} e \textbf{PHR}.
+
+Este \textit{setup} possuí duas interfaces de rede \textit{Gigabit} sendo uma delas destinadas a função, equivalente a um roteador convencional, WAN e a outra interface se destina a função LAN. 
+A interface WAN foi configurada para ganhar um endereço IP utilizando DHCP.
+Já a interface LAN foi configurada de forma manual definindo a mascara de rede /24, um endereço IP estático e um \textit{gateway} na rede WAN.
+Para a configuração de rede foram utilizados os seguintes comandos:
+
+\begin{lstlisting}
+sudo ip route add 192.168.0.0/24 via 10.0.1.1 dev eth0
+\end{lstlisting}
+
+\begin{lstlisting}
+sudo systemctl net.ipv4.ip_forward 
+sudo ip addr add 10.0.1.1/24 dev enp7s0 
+sudo iptables -t nat -A POSTROUTING -o enp9s0 -j MASQUERADE 
+\end{lstlisting}
+
+
+
+\subsection{Resultados}
+
+\section{Conclusão e Discussões}
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+
+\end{document}
