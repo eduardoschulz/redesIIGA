@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex sbc-template"] 1712712985 "sbc-template.aux" "sbc-template.bbl" "sbc-template" 1712713066 0
-  "./sbc-template.bib" 1712686699 725 bdc459d9953eda08f21705ef20e3b912 ""
+["bibtex main"] 1712718488 "main.aux" "main.bbl" "main" 1712719400 0
   "./sbc.bst" 1712686699 21864 a668496cca21cfdd211f7fb5f0d57565 ""
-  "sbc-template.aux" 1712713065 3617 e3eb3a3ae4f4822b3482cd3c1f895d1d "pdflatex"
+  "./sources/refs.bib" 1712715162 1302 92bcd1917a917a1b861bb82fca251d89 ""
+  "main.aux" 1712719400 1988 8661cc8175c4eabd0221ccdf99c8aac1 "pdflatex"
   (generated)
-  "sbc-template.bbl"
-  "sbc-template.blg"
+  "main.bbl"
+  "main.blg"
   (rewritten before read)
-["pdflatex"] 1712713065 "sbc-template.tex" "sbc-template.pdf" "sbc-template" 1712713066 0
+["pdflatex"] 1712719399 "main.tex" "main.pdf" "main" 1712719400 0
   "/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 4623441 d7c8d0b40f2acad4adfd3f297471a34b ""
   "/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 7884315 85d802d31af1f7ec26e1df7cae6e20f6 ""
   "/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/web2c/texmf.cnf" 1 41805 fe6674a4ce721504f3f60a66ac4ec6b3 ""
@@ -74,24 +74,26 @@
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/listings/listings.cfg" 1 1829 d8258b7d94f5f955e70c623e525f9f45 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/listings/listings.sty" 1 80947 75a96bb4c9f40ae31d54a01d924df2ff ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/listings/lstmisc.sty" 1 77021 d05e9115c67855816136d82929db8892 ""
+  "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/multirow/multirow.sty" 1 6149 2398eec4faa1ee24ff761581e580ecf1 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/ot1pcr.fd" 1 985 1ed784d7bfe47179f3550d2303b073f8 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/ot1ptm.fd" 1 961 15056f4a61917ceed3a44e4ac11fcc52 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/times.sty" 1 856 8e0e5c8cca7b18e0400f97f5a2b90a99 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/ts1ptm.fd" 1 619 96f56dc5d1ef1fe1121f1cfeec70ee0c ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/titlesec/titlesec.sty" 1 48833 3b7b4cfab1a3d15596bfd3772a77ab65 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/url/url.sty" 1 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "acronyms.tex" 1712711110 2270 42c61e3905946a9ae2f14ee88d9ecc3a ""
-  "sbc-template.aux" 1712713065 3617 e3eb3a3ae4f4822b3482cd3c1f895d1d "pdflatex"
-  "sbc-template.bbl" 1712712985 49 0eba253fc001332e731e8aba3f23127b "bibtex sbc-template"
+  "acronyms.tex" 1712715906 376 09883c3d805c94a85d13e38f14a43fff ""
+  "main.aux" 1712719400 1988 8661cc8175c4eabd0221ccdf99c8aac1 "pdflatex"
+  "main.bbl" 1712718488 429 28fe23e5a33f80424640b6706b91f613 "bibtex main"
+  "main.tex" 1712719398 1740 2f189c8d498b63a70d6ae8fe8e1eac03 ""
   "sbc-template.sty" 1712686699 6074 ecc54df5124d8db4ac67c42cc728f3a5 ""
-  "sbc-template.tex" 1712712847 1717 72f1f22a497cf61bd29cae1395fcb725 ""
-  "sources/01_introducao.tex" 1712712878 23 5e609f6caec90cd4cbf1275a2c08b10c ""
-  "sources/02_relatedworks.tex" 1712713063 2319 c722fb1c343266277d415d83457e4424 ""
-  "sources/03_metodologia.tex" 1712712790 1236 354b6915216ccd58fbd176f78a437922 ""
+  "sources/01_introducao.tex" 1712715763 527 216bd9986b7fa60e3b4478dc20dc68e7 ""
+  "sources/02_relatedworks.tex" 1712716187 1988 b0e479758e9a375f89d1c46412462a47 ""
+  "sources/03_metodologia.tex" 1712717572 1488 c5d1cfc3f26acedaf8ff88a90c397799 ""
   "sources/04_resultados.tex" 1712712802 3622 371293a24158909c7fe827edce3d724a ""
   "sources/05_conclusao.tex" 1712712981 35 7c6f75f4d72ac0a86a787095807720f8 ""
+  "sources/table-comp.tex" 1712719367 619 4e003d4bd0e9f62d8cfead02bc0329a7 ""
   (generated)
-  "sbc-template.aux"
-  "sbc-template.log"
-  "sbc-template.pdf"
+  "main.aux"
+  "main.log"
+  "main.pdf"
   (rewritten before read)
