@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex sbc-template"] 1712620795 "sbc-template.aux" "sbc-template.bbl" "sbc-template" 1712620795 0
-  "./sbc-template.bib" 1712154373 725 bdc459d9953eda08f21705ef20e3b912 ""
-  "./sbc.bst" 1712154373 21864 a668496cca21cfdd211f7fb5f0d57565 ""
-  "sbc-template.aux" 1712620795 1415 1a1eb530f89a6e3d25a7f5494924cf21 "pdflatex"
+["bibtex sbc-template"] 1712711557 "sbc-template.aux" "sbc-template.bbl" "sbc-template" 1712711558 0
+  "./sbc-template.bib" 1712686699 725 bdc459d9953eda08f21705ef20e3b912 ""
+  "./sbc.bst" 1712686699 21864 a668496cca21cfdd211f7fb5f0d57565 ""
+  "sbc-template.aux" 1712711557 3720 7c81312cf458dcda8a6c59fb61709208 "pdflatex"
   (generated)
   "sbc-template.bbl"
   "sbc-template.blg"
   (rewritten before read)
-["pdflatex"] 1712620795 "sbc-template.tex" "sbc-template.pdf" "sbc-template" 1712620795 0
+["pdflatex"] 1712711557 "sbc-template.tex" "sbc-template.pdf" "sbc-template" 1712711558 0
   "/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 4623441 d7c8d0b40f2acad4adfd3f297471a34b ""
   "/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 7884315 85d802d31af1f7ec26e1df7cae6e20f6 ""
   "/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/web2c/texmf.cnf" 1 41805 fe6674a4ce721504f3f60a66ac4ec6b3 ""
@@ -51,9 +51,13 @@
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/generic/babel/txtbabel.def" 1 6927 64b53e78feab932ab94f892bb5a5facf ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/generic/iftex/iftex.sty" 1 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/generic/iftex/ifvtex.sty" 1 1057 525c2192b5febbd8c1f662c9468335bb ""
+  "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/generic/xstring/xstring.sty" 1 123 a302f2c651a95033260db60e51527ae8 ""
+  "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/generic/xstring/xstring.tex" 1 48215 374fa42173896b227f2f50bc75dfda91 ""
+  "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/acronym/acronym.sty" 1 22582 38093488dbdcb4eb85c03bbc38fc7305 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/base/article.cls" 1 20144 d5ecf0a5140c8d8d8b72cbe86e320eff ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/base/inputenc.sty" 1 5048 84b05796b49b69e2d4257d537721c960 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/base/size12.clo" 1 8449 c314623021fbddd0180c05345324933c ""
+  "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/bigfoot/suffix.sty" 1 3090 223874a03a08cecb9fb79bd86e5dcf97 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/caption/caption.sty" 1 54291 b8e5c600d4aa37b48a740dd2a6c26163 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/caption/caption3.sty" 1 71241 d2cd3a1c5acef9cb31f945b93c0bb6e3 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1 13886 d1306dcf79a944f6988e688c1785f9ce ""
@@ -76,10 +80,12 @@
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/ts1ptm.fd" 1 619 96f56dc5d1ef1fe1121f1cfeec70ee0c ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/titlesec/titlesec.sty" 1 48833 3b7b4cfab1a3d15596bfd3772a77ab65 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/url/url.sty" 1 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "sbc-template.aux" 1712620795 1415 1a1eb530f89a6e3d25a7f5494924cf21 "pdflatex"
-  "sbc-template.bbl" 1712620795 49 0eba253fc001332e731e8aba3f23127b "bibtex sbc-template"
-  "sbc-template.sty" 1712154373 6074 ecc54df5124d8db4ac67c42cc728f3a5 ""
-  "sbc-template.tex" 1712620794 7135 3066313ca9802375204c8aa42c1f82f6 ""
+  "acronyms.tex" 1712711110 2270 42c61e3905946a9ae2f14ee88d9ecc3a ""
+  "sbc-template.aux" 1712711557 3720 7c81312cf458dcda8a6c59fb61709208 "pdflatex"
+  "sbc-template.bbl" 1712711557 49 0eba253fc001332e731e8aba3f23127b "bibtex sbc-template"
+  "sbc-template.sty" 1712686699 6074 ecc54df5124d8db4ac67c42cc728f3a5 ""
+  "sbc-template.tex" 1712711553 7207 714085a8ce85e5f1770bac6e5ae5b001 ""
+  "sources/02_relatedworks.tex" 1712711549 540 59a1823f4004062fbc04a56dd1e201ec ""
   (generated)
   "sbc-template.aux"
   "sbc-template.log"
