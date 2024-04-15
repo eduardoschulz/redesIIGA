@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/nixos.org) (preloaded format=pdflatex 1980.1.1)  10 APR 2024 00:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/nixos.org) (preloaded format=pdflatex 1980.1.1)  10 APR 2024 21:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -255,29 +255,38 @@ Package acronym Info: Label `acro:IMP' newly defined as it shall be overridden
 although it is yet undefined on input line 2.
 ) (./sources/03_metodologia.tex [1
 
-{/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./sources/table-comp.tex
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1.
-
-)) (./sources/04_resultados.tex
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 14.
+{/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./sources/04_resultados.tex (./sources/table-comp.tex
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 12.
  (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [2]) (./sources/05_conclusao.tex) (./main.bbl) [3] (./main.aux) ) 
+)
+Overfull \hbox (55.67781pt too wide) in paragraph at lines 4--27
+ [][] 
+ []
+
+) [2]
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 20.
+ (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+Package acronym Info: Label `acro:IP' newly defined as it shall be overridden
+although it is yet undefined on input line 24.
+) (./sources/05_conclusao.tex) (./main.bbl) [3] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 7432 strings out of 476024
- 122517 string characters out of 5772051
- 1864388 words of memory out of 5000000
- 27793 multiletter control sequences out of 15000+600000
+ 7458 strings out of 476024
+ 123011 string characters out of 5772051
+ 1865388 words of memory out of 5000000
+ 27816 multiletter control sequences out of 15000+600000
  527149 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,14n,77p,853b,994s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/enc/dvips/base/8r.enc}</nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/courier/ucrr8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmb8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmbi8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmr8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 87489 bytes).
+ 72i,14n,77p,853b,1239s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/enc/dvips/base/8r.enc}</nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/courier/ucrr8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmb8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmbi8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmr8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (3 pages, 93806 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 50 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

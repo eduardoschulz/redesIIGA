@@ -1,21 +1,27 @@
-\begin{table}[]
+% de exemplo
+\begin{table}[h]
 \centering
 \begin{tabular}{l|l|l|l|l|}
 \cline{2-5}
  &
   \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}A\\ Thinkpad T440s\end{tabular}} &
   \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}B\\ Raspberry Pi 3B\end{tabular}} &
-  \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}C\\ Custom Build\end{tabular}} &
+	\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}C\\ \textit{Custom Build}\end{tabular}} &
   \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}D\\ Tp Link\end{tabular}} \\ \hline
 \multicolumn{1}{|l|}{\textit{Hardware}} &
-  Intel Core i5 &
+  Intel\textregistered\space Core\texttrademark i5 4200U &
   4 core &
-  xeon &
+	Intel\textregistered\space Xeon\textregistered\space E5-2670 v3 &
   asic \\ \hline
 \multicolumn{1}{|l|}{\textit{Software}} &
-  linux &
-  linux &
-  linux &
-  linux \\ \hline
+ NixOS&
+ Raspberry OS&
+ NixOS&
+  OpenWRT \\ \hline
+\multicolumn{1}{|l|}{\textit{Kernel}} &
+ 6.1.79&
+ 6.1.21-v8+&
+ 6.1.79&
+ 3.0 \\ \hline
 \end{tabular}
 \end{table}

@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1712718488 "main.aux" "main.bbl" "main" 1712719400 0
+["bibtex main"] 1712794088 "main.aux" "main.bbl" "main" 1712794202 0
   "./sbc.bst" 1712686699 21864 a668496cca21cfdd211f7fb5f0d57565 ""
   "./sources/refs.bib" 1712715162 1302 92bcd1917a917a1b861bb82fca251d89 ""
-  "main.aux" 1712719400 1988 8661cc8175c4eabd0221ccdf99c8aac1 "pdflatex"
+  "main.aux" 1712794202 1748 54bb11e21fa6e5ac77206b967beee5e0 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1712719399 "main.tex" "main.pdf" "main" 1712719400 0
+["pdflatex"] 1712794202 "main.tex" "main.pdf" "main" 1712794202 0
   "/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 4623441 d7c8d0b40f2acad4adfd3f297471a34b ""
   "/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 7884315 85d802d31af1f7ec26e1df7cae6e20f6 ""
   "/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/web2c/texmf.cnf" 1 41805 fe6674a4ce721504f3f60a66ac4ec6b3 ""
@@ -34,6 +34,7 @@
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/tfm/public/cm/cmsy6.tfm" 1 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/tfm/public/cm/cmsy8.tfm" 1 1120 8b7d695260f3cff42e636090a8002094 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
+  "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/courier/ucrr8a.pfb" 1 45758 19968a0990191524e34e1994d4a31cb6 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmb8a.pfb" 1 44729 811d6c62865936705a31c797a1d5dada ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmbi8a.pfb" 1 44656 0cbca70e0534538582128f6b54593cca ""
@@ -75,6 +76,7 @@
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/listings/listings.sty" 1 80947 75a96bb4c9f40ae31d54a01d924df2ff ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/listings/lstmisc.sty" 1 77021 d05e9115c67855816136d82929db8892 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/multirow/multirow.sty" 1 6149 2398eec4faa1ee24ff761581e580ecf1 ""
+  "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/omsptm.fd" 1 576 95c2c0baea9c719a4be29a3d4122498b ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/ot1pcr.fd" 1 985 1ed784d7bfe47179f3550d2303b073f8 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/ot1ptm.fd" 1 961 15056f4a61917ceed3a44e4ac11fcc52 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/times.sty" 1 856 8e0e5c8cca7b18e0400f97f5a2b90a99 ""
@@ -82,16 +84,16 @@
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/titlesec/titlesec.sty" 1 48833 3b7b4cfab1a3d15596bfd3772a77ab65 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/url/url.sty" 1 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "acronyms.tex" 1712715906 376 09883c3d805c94a85d13e38f14a43fff ""
-  "main.aux" 1712719400 1988 8661cc8175c4eabd0221ccdf99c8aac1 "pdflatex"
-  "main.bbl" 1712718488 429 28fe23e5a33f80424640b6706b91f613 "bibtex main"
+  "main.aux" 1712794202 1748 54bb11e21fa6e5ac77206b967beee5e0 "pdflatex"
+  "main.bbl" 1712794088 429 28fe23e5a33f80424640b6706b91f613 "bibtex main"
   "main.tex" 1712719398 1740 2f189c8d498b63a70d6ae8fe8e1eac03 ""
   "sbc-template.sty" 1712686699 6074 ecc54df5124d8db4ac67c42cc728f3a5 ""
   "sources/01_introducao.tex" 1712715763 527 216bd9986b7fa60e3b4478dc20dc68e7 ""
   "sources/02_relatedworks.tex" 1712716187 1988 b0e479758e9a375f89d1c46412462a47 ""
-  "sources/03_metodologia.tex" 1712717572 1488 c5d1cfc3f26acedaf8ff88a90c397799 ""
-  "sources/04_resultados.tex" 1712712802 3622 371293a24158909c7fe827edce3d724a ""
+  "sources/03_metodologia.tex" 1712787907 1461 056b6588647b62437f45c4228adb671f ""
+  "sources/04_resultados.tex" 1712794200 1969 851a80ede6b944c0f1202c9990acc422 ""
   "sources/05_conclusao.tex" 1712712981 35 7c6f75f4d72ac0a86a787095807720f8 ""
-  "sources/table-comp.tex" 1712719367 619 4e003d4bd0e9f62d8cfead02bc0329a7 ""
+  "sources/table-comp.tex" 1712793764 829 46cc1f21a4c6195ead57cbd67869ee73 ""
   (generated)
   "main.aux"
   "main.log"

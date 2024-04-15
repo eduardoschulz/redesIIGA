@@ -1,43 +1,42 @@
 \section{Avaliação de desempenho e funcionalidade}
 Nessa sessão será apresentado o os ambientes dos cenários de testes, principalmente como foram configurados e seus respectivos \textit{hardwares}. Também será exposto os resultados dos experimentos realizados neste trabalho.
 \subsection{Equipamentos}
-Como explicado na ??botar secao dos cenarios??, o testes serão realizados seguindo tais cenários com diversos equipamentos, que devem ser alterados dependendo do cenário selecionado.
+
+Como explicado na seção 3, o testes serão realizados seguindo cenários com diversos equipamentos, que devem ser alterados dependendo do cenário selecionado.
 A coleta de métricas de consumo de processador, memória, entrada e saída de \textit{bits} pela interface de rede
 foram realizadas usando o \textit{software} Prometheus em conjunto com o Grafana para a visualização gráfica dos dados.
 
+\input{sources/table-comp}
 %Para a realização dos cenários de testes foram criados \textit{testbeds} compostos por três computadores, um roteador e um \textit{switch}. 
 %\subsection{\textit{Testbed}}
 %Para a realização dos dois cenários de testes foi criado uma \textit{Testbed} composta por três máquinas rodando GNU/Linux.
 %Todas as máquinas estam equipadas com interfaces de redes \textit{Gigabit} para maior banda de tranfêrencia. 
 
-\subsubsection{\textit{Host} A}
-O \textit{Host} A foi definido como um \textit{laptop} Thinkpad T440s com um Intel\textregistered\space Core\texttrademark\space i5-4200U. Esta máquina está rodando NixOS com o \textit{kernel} Linux 6.1.79. %%Apenas foi necessário adicionar uma rota até o \textit{Host} B através do roteador para que o sistema funcione no cenário 2:
 
-\subsubsection{\textit{Host} B}
-O \textit{Host} B é um Raspberry Pi 3B. Este \textit{Single Board Computer} está rodando o Raspberry Pi OS, baseado na distribuição Debian Linux, com o \textit{kernel} Linux 6.1.21-v8+. %Como citado acima, este \textit{Host} tomara o \textit{hardware} do roteador e vice-versa. Também foi necessário adicionar uma rota, até o \textit{Host} A através do roteador para que o sistema funcione no cenário 2:
-
-\subsubsection{\textit{Host} C}
-Este computar está equipado com um Intel\textregistered\space Xeon\textregistered\space E5-2670 v3 com 12 núcleos e 24 \textit{threads}.
-O sistema operacional foi GNU/Linux, especificamente a distribuição NixOS usando o \textit{Linux 6.1.79}. Sendo o \textit{host} com as melhores especificações, ele também foi escolhido para hospedar o Grafana e Prometheus.
-
-
-\subsubsection{\textit{Host} D}
-Para este \textit{host} foi escolhido um TP-Link\textregistered\space TL-WR741ND com 5 portas. Este roteador foi configurado para executar o \textit{firmware} customizado OpenWRT, baseado no GNU/Linux. Com acesso privelegiado ao \textit{hardware} do roteador poderemos coletar muito mais informações do que um roteador COTS(\textit{Commercial-Off-The-Shelf}). Também poderemos comparar a performance entre um roteador \textbf{VSR} e \textbf{PHR}.
-
-Este \textit{setup} possuí duas interfaces de rede \textit{Gigabit} sendo uma delas destinadas a função, equivalente a um roteador convencional, WAN e a outra interface se destina a função LAN. 
-A interface WAN foi configurada para ganhar um endereço IP utilizando DHCP.
-Já a interface LAN foi configurada de forma manual definindo a mascara de rede /24, um endereço IP estático e um \textit{gateway} na rede WAN.
-Para a configuração de rede foram utilizados os seguintes comandos:
+\subsubsection{Configuração dos Equipamentos}
+No cenário I os equipamentos A e B foram configurados da seguinte forma:
 
 \begin{lstlisting}
-sudo ip route add 192.168.0.0/24 via 10.0.1.1 dev eth0
+sudo ip addr add 10.0.1.2/24 dev {iface} # A
+sudo ip addr add 10.0.1.3/24 dev {iface} # B
 \end{lstlisting}
+
+Nos cenários II e III, o roteador recebeu um endereço \ac{IP} fixo assim como o segundo computador. O primeiro computador recebeu um endereço \ac{IP} dinâmico dado pela rede acima do roteador.
+
+Para o roteador: 
 
 \begin{lstlisting}
 sudo systemctl net.ipv4.ip_forward 
 sudo ip addr add 10.0.1.1/24 dev enp7s0 
 sudo iptables -t nat -A POSTROUTING -o enp9s0 -j MASQUERADE 
 \end{lstlisting}
+
+Para o segundo computador:
+\begin{lstlisting}
+sudo ip addr add 10.0.1.2/24 dev {iface}
+sudo ip route add 192.168.0.0/24 via 10.0.1.1 dev {iface}
+\end{lstlisting}
+
 
 
 
