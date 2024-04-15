@@ -22,7 +22,6 @@ files = [
 
 def read_file(filename):
     with open(filename, "r") as file:
-        print(type(json))
         data = json.load(file)
     return data
 
@@ -43,4 +42,5 @@ if __name__ == "__main__":
     
     for i in files:
         json = read_file(i)
-        print(getMean(json))
+        data = extract(json)
+        print(getMean(data))
