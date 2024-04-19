@@ -1,0 +1,11 @@
+{
+	"start":	{
+		"connected":	[],
+		"version":	"iperf 3.16",
+		"system_info":	"Linux nixos 6.1.79 #1-NixOS SMP PREEMPT_DYNAMIC Fri Feb 23 08:12:53 UTC 2024 x86_64"
+	},
+	"intervals":	[],
+	"end":	{
+	},
+	"error":	"interrupt - the server has terminated"
+}
