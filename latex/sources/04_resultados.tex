@@ -63,9 +63,9 @@ Para o roteador:
 
 \begin{verbatim}
 # No roteador
-sudo systemctl net.ipv4.ip_forward 
-sudo ip addr add 10.0.1.1/24 dev {iface1} 
-sudo iptables -t nat -A POSTROUTING -o {iface2} -j MASQUERADE 
+# systemctl net.ipv4.ip_forward 
+# ip addr add 10.0.1.1/24 dev {iface1} 
+# iptables -t nat -A POSTROUTING -o {iface2} -j MASQUERADE 
 \end{verbatim}
 
 \begin{verbatim}
@@ -77,15 +77,54 @@ sudo ip route add 192.168.0.0/24 via 10.0.1.1 dev {iface}
 Já no \textbf{cenário IV} o roteador também foi configurado para receber um endereço dinâmico na porta \ac{WAN} e fixo na porta \ac{LAN}. Toda configuração foi feita pela interface gráfica \textit{web} disponibilizada pelo \textit{OpenWRT}. O segundo computador não precisou ser configurado pois o mesmo ganhou endereço \ac{IP} dinâmico pelo servidor \ac{DHCP} do roteador.
 
 
-\subsection{Throughput}
+\subsection{Resultados}
+\subsubsection{\textit{Throughput}}
 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.9\linewidth]{sources/fig-throughput.png}
+		\caption{\textit{Throughput} atingido com datagramas de tamanhos diferentes.}
+    \label{fig:throughput}
+\end{figure}
+
+Como é possível notar na figura \ref{fig:throughput} o cenário de controle, isto é o I, possuio a maior taxa de transferência entre todos os cenários. Os cenários II e III tiveram resultados semelhantes porém, o II teve uma taxa ligeiramente superior nos datagramas maiores em comparação com o cenário III, isto é com uma variância maior também. Já o cenário IV teve o pior dos resultados registrados, com taxas de transferência inferior aos demais e com uma varianção elevada.
+
+\subsubsection{Número de Pacotes}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{sources/fig-throughput.png}
-    \caption{Cenários dos testes a serem realizados.}
-    \label{fig:cenarios}
+    \includegraphics[width=0.9\linewidth]{sources/fig-pacotes.png}
+    \caption{Número de datagramas enviados por segundo em cada teste realizado.}
+    \label{fig:num pacotes}
 \end{figure}
+
+Assim como nos outro gráfico \ref{fig:throughput}, podemos notar um padrão. Ná figura \ref{fig:num pacotes} podemos notar pouca diferenca entre os cenários I, II e III, onde todos apresentam um número de pacotes enviados por segundo semelhante. É possível notar que novamente o cenário IV possuiu resultados bem diferentes dos demais, apresentando desvio padrão muito superior que os demais cenários, principalmente nos datagramas com tamanho de 1024 bytes.
+
+\subsubsection{Jitter}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{sources/fig-jitter.png}
+    \caption{Boxplot dos dados de jitter coletados nos testes seguindo tamanho de datagrama.}
+    \label{fig:jitter}
+\end{figure}
+
+Nesta figura \ref{fig:jitter} podemos analizar as médias assim como os \textit{outliers} coletados pelo iPerf3 quando medindo o jitter. Como podemos notar o cenário I e II tiveram resultados semelhantes. O cenário III por sua vez teve um \textit{jitter} superior aos cenários I e II e com um \textit{outliers} mais notáveis. O cenário IV teve o pior dos resultados comparado com os demais, apresentando latências muito superiores e variações altissímas.
+
+\subsubsection{Perda de Pacotes}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{sources/fig-pacotes-perdidos.png}
+    \caption{Perda de Pacotes.}
+    \label{fig:perda}
+\end{figure}
+
+Nesta figura \ref{fig:perda} é apenas exposto a perda de pacotes acosionada no cenário IV. Os demais cenários não apresentaram perdas de pacotes significativas, isto é, perdas superiores a 1\%. É claramente visível que o roteador deste cenário não foi capaz de suportar tal carga, tendo casos que as perdas ultrapassam 67\%. 
+
+É possível notar que o roteador teve maior dificuldade lidando com datagramas menores, isso se dá porque o maior custo computacional acontece na quebra do cabeçalho. Então em fluxos com datagramas menores mais pacotes são enviados e por consequencia mais pacotes precisam ser desmontados pelo roteador. Já com datagramas maiores o número de pacotes pode ser menor como é visto na figura\ref{fig:num pacotes}.
+
+
 
 
 
