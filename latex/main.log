@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/nixos.org) (preloaded format=pdflatex 1980.1.1)  10 APR 2024 21:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/nixos.org) (preloaded format=pdflatex 1980.1.1)  21 APR 2024 01:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -155,31 +155,87 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@cntb=\count278
 \multirow@dima=\skip53
 \bigstrutjot=\dimen169
+) (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+ (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen170
+\ar@mcellbox=\box54
+\extrarowheight=\dimen171
+\NC@list=\toks23
+\extratabsurround=\skip54
+\backup@length=\skip55
+\ar@cellbox=\box55
+)
+\rotheadsize=\dimen172
+\c@nlinenum=\count279
+\TeXr@lab=\toks24
+) (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen173
+\TX@old@table=\dimen174
+\TX@old@col=\dimen175
+\TX@target=\dimen176
+\TX@delta=\dimen177
+\TX@cols=\count280
+\TX@ftn=\toks25
+) (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+ (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+ (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+\everycr=\toks26
+\minrowclearance=\skip56
+\rownum=\count281
+) (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+) (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count282
+\float@exts=\toks27
+\float@box=\box56
+\@float@everytoks=\toks28
+\@floatcapt=\box57
 ) (./acronyms.tex)
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 25.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 30.
  (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count279
-\l__pdf_internal_box=\box54
-) (./main.aux)
+\l__color_backend_stack_int=\count283
+\l__pdf_internal_box=\box58
+) (./main.aux
+
+LaTeX Warning: Label `fig:cenarios' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -216,35 +272,36 @@ LaTeX Font Info:    ... okay on input line 25.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count280
-\scratchdimen=\dimen170
-\scratchbox=\box55
-\nofMPsegments=\count281
-\nofMParguments=\count282
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count283
-\MPscratchDim=\dimen171
-\MPnumerator=\count284
-\makeMPintoPDFobject=\count285
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count284
+\scratchdimen=\dimen178
+\scratchbox=\box59
+\nofMPsegments=\count285
+\nofMParguments=\count286
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count287
+\MPscratchDim=\dimen179
+\MPnumerator=\count288
+\makeMPintoPDFobject=\count289
+\everyMPtoPDFconversion=\toks30
 ) (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@lstlisting=\count286
+\c@lstlisting=\count290
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 27.
+(Font)              <12> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 27.
+(Font)              <8> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 27.
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 27.
+(Font)              <6> on input line 32.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 32.
  (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) (./sources/01_introducao.tex
@@ -255,38 +312,56 @@ Package acronym Info: Label `acro:IMP' newly defined as it shall be overridden
 although it is yet undefined on input line 2.
 ) (./sources/03_metodologia.tex [1
 
-{/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./sources/04_resultados.tex (./sources/table-comp.tex
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 12.
+{/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<sources/fig-cenarios.png, id=12, 838.13126pt x 532.99126pt>
+File: sources/fig-cenarios.png Graphic file (type png)
+<use sources/fig-cenarios.png>
+Package pdftex.def Info: sources/fig-cenarios.png  used on input line 12.
+(pdftex.def)             Requested size: 384.1096pt x 244.25995pt.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 13.
+ (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
+)) (./sources/04_resultados.tex [2 <./sources/fig-cenarios.png>]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 17.
  (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Overfull \hbox (55.67781pt too wide) in paragraph at lines 4--27
- [][] 
+Package acronym Info: Label `acro:IP' newly defined as it shall be overridden
+although it is yet undefined on input line 58.
+Package acronym Info: Label `acro:DHCP' newly defined as it shall be overridden
+although it is yet undefined on input line 58.
+
+Overfull \hbox (12.40846pt too wide) in paragraph at lines 69--69
+[]\OT1/pcr/m/n/12 sudo iptables -t nat -A POSTROUTING -o {iface2} -j MASQUERADE[] 
  []
 
-) [2]
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 20.
- (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
-Package acronym Info: Label `acro:IP' newly defined as it shall be overridden
-although it is yet undefined on input line 24.
-) (./sources/05_conclusao.tex) (./main.bbl) [3] (./main.aux) ) 
+Package acronym Info: Label `acro:WAN' newly defined as it shall be overridden
+although it is yet undefined on input line 77.
+Package acronym Info: Label `acro:LAN' newly defined as it shall be overridden
+although it is yet undefined on input line 77.
+<sources/fig-throughput.png, id=19, 857.8449pt x 632.3625pt>
+File: sources/fig-throughput.png Graphic file (type png)
+<use sources/fig-throughput.png>
+Package pdftex.def Info: sources/fig-throughput.png  used on input line 85.
+(pdftex.def)             Requested size: 384.1096pt x 283.15173pt.
+[3]) (./sources/05_conclusao.tex) (./main.bbl) [4 <./sources/fig-throughput.png>] (./main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 7458 strings out of 476024
- 123011 string characters out of 5772051
- 1865388 words of memory out of 5000000
- 27816 multiletter control sequences out of 15000+600000
- 527149 words of font info for 59 fonts, out of 8000000 for 9000
+ 8194 strings out of 476024
+ 135466 string characters out of 5772051
+ 1868388 words of memory out of 5000000
+ 28521 multiletter control sequences out of 15000+600000
+ 530509 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,14n,77p,853b,1239s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/enc/dvips/base/8r.enc}</nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/courier/ucrr8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmb8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmbi8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmr8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 93806 bytes).
+ 72i,13n,77p,874b,420s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/enc/dvips/base/8r.enc}</nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/courier/ucrr8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/helvetic/uhvb8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmb8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmbi8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmr8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (4 pages, 237111 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 58 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

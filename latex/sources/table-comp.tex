@@ -1,27 +1,43 @@
-% de exemplo
-\begin{table}[h]
+
+\begin{table}[!h]
 \centering
-\begin{tabular}{l|l|l|l|l|}
-\cline{2-5}
- &
-  \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}A\\ Thinkpad T440s\end{tabular}} &
-  \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}B\\ Raspberry Pi 3B\end{tabular}} &
-	\multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}C\\ \textit{Custom Build}\end{tabular}} &
-  \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}D\\ Tp Link\end{tabular}} \\ \hline
-\multicolumn{1}{|l|}{\textit{Hardware}} &
-  Intel\textregistered\space Core\texttrademark i5 4200U &
-  4 core &
-	Intel\textregistered\space Xeon\textregistered\space E5-2670 v3 &
-  asic \\ \hline
-\multicolumn{1}{|l|}{\textit{Software}} &
- NixOS&
- Raspberry OS&
- NixOS&
-  OpenWRT \\ \hline
-\multicolumn{1}{|l|}{\textit{Kernel}} &
- 6.1.79&
- 6.1.21-v8+&
- 6.1.79&
- 3.0 \\ \hline
+\label{tab:freq-conf}
+\begin{tabular}{cc|}
+\hline
+\rowcolor[HTML]{DFDFDF} 
+\multicolumn{2}{|c|}{\cellcolor[HTML]{DFDFDF}A - Thinkpad T440s}               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}Processador}         & Intel\textregistered\space Core\texttrademark\space i5 4200U          \\ \hline
+\multicolumn{1}{|c|}{RAM}                    & 8GB DDR3               \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}SO} & NixOS GNU/Linux                   \\ \hline
+\multicolumn{1}{|c|}{\textit{kernel}}                   & 6.1.79          \\ \hline \hline
+\rowcolor[HTML]{DFDFDF} 
+\multicolumn{2}{|c|}{\cellcolor[HTML]{DFDFDF}B - Raspberry Pi 4}                 \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}Processador} & Broadcom BCM2711 \\ \hline
+\multicolumn{1}{|c|}{RAM} & 4GB LPDDR4  \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}SO}                 & RPiOS Lite GNU/Linux     \\ \hline
+\multicolumn{1}{|c|}{\textit{kernel}}   & 6.6.20+rpt-rpi-v8    \\ \hline 
 \end{tabular}
+\begin{tabular}[h]{cc|} \hline
+\rowcolor[HTML]{DFDFDF} 
+\multicolumn{2}{|c|}{\cellcolor[HTML]{DFDFDF}C - \textit{Custom Build}}              \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}Processador} & Intel\textregistered\space Xeon\textregistered\space E5-2670v3            \\ \hline
+\multicolumn{1}{|c|}{RAM}                         & 16GB DDR4 ECC              \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}SO}         & NixOS GNU/Linux \\ \hline
+\multicolumn{1}{|c|}{\textit{kernel}}           & 6.1.79  \\ \hline \hline
+\rowcolor[HTML]{DFDFDF} 
+\multicolumn{2}{|c|}{\cellcolor[HTML]{DFDFDF}D - TPLink WR741ND}                 \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}Banda} & \textit{FastEthernet} 100Mbit/s         \\ \hline
+\multicolumn{1}{|c|}{\textit{Firmware}}                        & OpenWRT                \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}Núm. Portas}         & 4        \\ \hline
+\multicolumn{1}{|c|}{Lançamento}           & 2016    \\ \hline
+\end{tabular}
+\caption{Especificação dos Equipamentos}
 \end{table}
