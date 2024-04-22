@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1713744732 "main.aux" "main.bbl" "main" 1713744733 0
+["bibtex main"] 1713743677 "main.aux" "main.bbl" "main" 1713743679 0
   "./sbc.bst" 1712964624 21864 a668496cca21cfdd211f7fb5f0d57565 ""
   "./sources/refs.bib" 1713671950 1855 1abe00a24d9dc812a916cdeaa4a19c87 ""
-  "main.aux" 1713744733 4164 76775efbc8eaa7992a63bab49a1148bd "pdflatex"
+  "main.aux" 1713743678 4094 3be0270cf9506e2984fa05962eaa0750 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1713744732 "main.tex" "main.pdf" "main" 1713744733 0
+["pdflatex"] 1713743677 "main.tex" "main.pdf" "main" 1713743679 0
   "/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 4623441 d7c8d0b40f2acad4adfd3f297471a34b ""
   "/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 7884315 85d802d31af1f7ec26e1df7cae6e20f6 ""
   "/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/web2c/texmf.cnf" 1 41805 fe6674a4ce721504f3f60a66ac4ec6b3 ""
@@ -102,14 +102,14 @@
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/url/url.sty" 1 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/xcolor/xcolor.sty" 1 56148 51a9a8571c07b9921892ae11063ae853 ""
   "acronyms.tex" 1713669176 538 a68a59195d57c603128936e8a4181dbd ""
-  "main.aux" 1713744733 4164 76775efbc8eaa7992a63bab49a1148bd "pdflatex"
-  "main.bbl" 1713744732 719 a76ba8c6657186186f5f88dee17b3e88 "bibtex main"
-  "main.tex" 1713744730 1958 e3fa3754a5186329c2d62fc2b8921ae1 ""
+  "main.aux" 1713743678 4094 3be0270cf9506e2984fa05962eaa0750 "pdflatex"
+  "main.bbl" 1713743677 719 a76ba8c6657186186f5f88dee17b3e88 "bibtex main"
+  "main.tex" 1713743264 2114 f7c89832d4bd7fff2feb88dd4075a6c4 ""
   "sbc-template.sty" 1712964624 6074 ecc54df5124d8db4ac67c42cc728f3a5 ""
   "sources/01_introducao.tex" 1713674395 504 55cf67cc2418395cb3746d673c86e007 ""
-  "sources/02_relatedworks.tex" 1713744228 1820 2efd171b31ebfb6fbcc6bd045ea9831d ""
-  "sources/03_metodologia.tex" 1713744532 1627 9448e6357f22c25615acb1f91908811a ""
-  "sources/04_resultados.tex" 1713744581 7789 0e44529dd1a65dc0c8323afc2fe06f4e ""
+  "sources/02_relatedworks.tex" 1713674666 2032 cf063b7f06992dae622dd5ac623f8a88 ""
+  "sources/03_metodologia.tex" 1713674730 1675 7d33ec835337f27f71d7edd001c599d8 ""
+  "sources/04_resultados.tex" 1713743674 7808 a22976b680cfe05a683a953c63e3d2d3 ""
   "sources/05_conclusao.tex" 1712964624 35 7c6f75f4d72ac0a86a787095807720f8 ""
   "sources/fig-cenarios.png" 1713673985 84722 2576d5de92fa04138c48913de325fce1 ""
   "sources/fig-jitter.png" 1713743614 105772 492fe8cbcc83b0e90433d4a6c20fc6eb ""

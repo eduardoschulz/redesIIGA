@@ -1,0 +1,18 @@
+\begin{thebibliography}{}
+
+\bibitem[Beifuß et~al. 2016]{linux}
+Beifuß, A., Runge, T.~M., Raumer, D., Emmerich, P., Wolfinger, B.~E., and
+  Carle, G. (2016).
+\newblock Building a low latency linux software router.
+\newblock In {\em 2016 28th International Teletraffic Congress (ITC 28)},
+  volume~01, pages 35--43.
+
+\bibitem[Heart et~al. 1970]{ARPA}
+Heart, F.~E., Kahn, R.~E., Ornstein, S.~M., Crowther, W.~R., and Walden, D.~C.
+  (1970).
+\newblock The interface message processor for the arpa computer network.
+\newblock In {\em Proceedings of the May 5-7, 1970, Spring Joint Computer
+  Conference}, AFIPS '70 (Spring), page 551–567, New York, NY, USA.
+  Association for Computing Machinery.
+
+\end{thebibliography}

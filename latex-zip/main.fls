@@ -366,7 +366,6 @@ INPUT /nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex
 INPUT /nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/setspace/setspace.sty
 INPUT /nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/setspace/setspace.sty
 INPUT /nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/setspace/setspace.sty
-INPUT /nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/caption/caption.sty
 INPUT /nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/acronym/acronym.sty
 INPUT ./acronyms.tex
 INPUT ./acronyms.tex

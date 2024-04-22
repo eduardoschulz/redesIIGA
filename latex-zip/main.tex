@@ -14,8 +14,11 @@
 \usepackage{float}
 
 \usepackage{setspace}
-\setstretch{0.95}
-\usepackage[belowskip=-10pt,aboveskip=0pt]{caption}
+% Let top 85% of a page contain a figure
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\textfraction}{0.1}
+% Only place figures by themselves if they take up more than 75% of the page
+\renewcommand{\floatpagefraction}{0.75}
 \usepackage{acronym} 
 \input{acronyms}
      

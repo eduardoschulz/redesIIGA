@@ -1,0 +1,3 @@
+PWD /home/eduardo/redesIIGA/latex
+INPUT /nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/web2c/texmf.cnf
+INPUT /nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/web2c/pdftex/pdflatex.fmt
