@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/nixos.org) (preloaded format=pdflatex 1980.1.1)  21 APR 2024 21:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/nixos.org) (preloaded format=pdflatex 1980.1.1)  22 APR 2024 16:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -303,97 +303,106 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 35.
  (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) (./sources/01_introducao.tex
-Package acronym Info: Label `acro:ASIC' newly defined as it shall be overridden
+)
+Underfull \hbox (badness 1092) in paragraph at lines 42--43
+[]\OT1/ptm/m/it/12 Roteadores, prin-ci-pal-mente os re-si-den-ci-ais, s[]ao pen-sa-dos como
+ []
+
+(./sources/01_introducao.tex
+Package acronym Info: Label `acro:IP' newly defined as it shall be overridden
 although it is yet undefined on input line 3.
+Package acronym Info: Label `acro:AS' newly defined as it shall be overridden
+although it is yet undefined on input line 3.
+Package acronym Info: Label `acro:ASIC' newly defined as it shall be overridden
+although it is yet undefined on input line 5.
 ) (./sources/02_relatedworks.tex
 Package acronym Info: Label `acro:IMP' newly defined as it shall be overridden
 although it is yet undefined on input line 2.
-Package acronym Info: Label `acro:AS' newly defined as it shall be overridden
-although it is yet undefined on input line 10.
-
-
-Package acronym Warning: Acronym `AS' is not defined on input line 10.
-
-
-Package acronym Warning: Acronym `AS' is not defined on input line 10.
-
 ) (./sources/03_metodologia.tex [1
 
 {/nix/store/1fv1wfs3di6lk67vawzjw05iglhigkyz-texlive-2022-env/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 <sources/fig-cenarios.png, id=12, 838.13126pt x 532.99126pt>
 File: sources/fig-cenarios.png Graphic file (type png)
 <use sources/fig-cenarios.png>
-Package pdftex.def Info: sources/fig-cenarios.png  used on input line 12.
+Package pdftex.def Info: sources/fig-cenarios.png  used on input line 14.
 (pdftex.def)             Requested size: 384.1096pt x 244.25995pt.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 13.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 15.
  (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
-)) (./sources/04_resultados.tex [2 <./sources/fig-cenarios.png>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 17.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]) (./sources/04_resultados.tex
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 13.
  (/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Package acronym Info: Label `acro:IP' newly defined as it shall be overridden
-although it is yet undefined on input line 58.
 Package acronym Info: Label `acro:DHCP' newly defined as it shall be overridden
-although it is yet undefined on input line 58.
+although it is yet undefined on input line 55.
+ [3 <./sources/fig-cenarios.png>]
+Overfull \hbox (55.60844pt too wide) in paragraph at lines 71--71
+[]\OT1/pcr/m/n/12 ./iperf3.sh # Script de testes dispon[]^^Pvel no reposit[]orio do github.[] 
+ []
+
 Package acronym Info: Label `acro:WAN' newly defined as it shall be overridden
-although it is yet undefined on input line 75.
+although it is yet undefined on input line 78.
 Package acronym Info: Label `acro:LAN' newly defined as it shall be overridden
-although it is yet undefined on input line 75.
-<sources/fig-throughput.png, id=19, 722.7pt x 700.2963pt>
+although it is yet undefined on input line 78.
+<sources/fig-throughput.png, id=22, 722.7pt x 722.7pt>
 File: sources/fig-throughput.png Graphic file (type png)
 <use sources/fig-throughput.png>
-Package pdftex.def Info: sources/fig-throughput.png  used on input line 83.
-(pdftex.def)             Requested size: 384.1096pt x 372.20247pt.
+Package pdftex.def Info: sources/fig-throughput.png  used on input line 88.
+(pdftex.def)             Requested size: 384.1096pt x 384.10986pt.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 84.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 89.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[3]
-<sources/fig-pacotes.png, id=23, 722.7pt x 700.2963pt>
+ [4]
+<sources/fig-pacotes.png, id=26, 722.7pt x 722.7pt>
 File: sources/fig-pacotes.png Graphic file (type png)
 <use sources/fig-pacotes.png>
-Package pdftex.def Info: sources/fig-pacotes.png  used on input line 94.
+Package pdftex.def Info: sources/fig-pacotes.png  used on input line 98.
+(pdftex.def)             Requested size: 384.1096pt x 384.10986pt.
+<sources/fig-jitter.png, id=27, 1298.6919pt x 897.5934pt>
+File: sources/fig-jitter.png Graphic file (type png)
+<use sources/fig-jitter.png>
+Package pdftex.def Info: sources/fig-jitter.png  used on input line 109.
+(pdftex.def)             Requested size: 384.1096pt x 265.47256pt.
+
+Underfull \vbox (badness 6792) has occurred while \output is active []
+
+ [5 <./sources/fig-throughput.png>]
+Overfull \vbox (42.10612pt too high) has occurred while \output is active []
+
+ [6 <./sources/fig-pacotes.png> <./sources/fig-jitter.png>]
+<sources/fig-pacotes-perdidos.png, id=38, 867.24pt x 722.7pt>
+File: sources/fig-pacotes-perdidos.png Graphic file (type png)
+<use sources/fig-pacotes-perdidos.png>
+Package pdftex.def Info: sources/fig-pacotes-perdidos.png  used on input line 120.
+(pdftex.def)             Requested size: 384.1096pt x 320.09523pt.
+<sources/fig-cpu.png, id=39, 722.7pt x 700.2963pt>
+File: sources/fig-cpu.png Graphic file (type png)
+<use sources/fig-cpu.png>
+Package pdftex.def Info: sources/fig-cpu.png  used on input line 134.
 (pdftex.def)             Requested size: 384.1096pt x 372.20247pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <./sources/fig-throughput.png>]
-<sources/fig-jitter.png, id=29, 1298.6919pt x 897.5934pt>
-File: sources/fig-jitter.png Graphic file (type png)
-<use sources/fig-jitter.png>
-Package pdftex.def Info: sources/fig-jitter.png  used on input line 105.
-(pdftex.def)             Requested size: 384.1096pt x 265.47256pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5 <./sources/fig-pacotes.png>]
-<sources/fig-pacotes-perdidos.png, id=34, 867.24pt x 722.7pt>
-File: sources/fig-pacotes-perdidos.png Graphic file (type png)
-<use sources/fig-pacotes-perdidos.png>
-Package pdftex.def Info: sources/fig-pacotes-perdidos.png  used on input line 116.
-(pdftex.def)             Requested size: 384.1096pt x 320.09523pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <./sources/fig-jitter.png>]) (./sources/05_conclusao.tex) (./main.bbl) [7 <./sources/fig-pacotes-perdidos.png>] (./main.aux) ) 
+ [7 <./sources/fig-pacotes-perdidos.png>]) (./sources/05_conclusao.tex [8 <./sources/fig-cpu.png>]) (./main.bbl) [9] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 8272 strings out of 476024
- 137359 string characters out of 5772051
- 1869388 words of memory out of 5000000
- 28590 multiletter control sequences out of 15000+600000
+ 8280 strings out of 476024
+ 137527 string characters out of 5772051
+ 1864388 words of memory out of 5000000
+ 28597 multiletter control sequences out of 15000+600000
  532268 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,13n,77p,824b,425s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,14n,77p,806b,421s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/enc/dvips/base/8r.enc}</nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/public/amsfonts/cm/cmr8.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/courier/ucrr8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/helvetic/uhvb8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/helvetic/uhvbo8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmb8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmbi8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmr8a.pfb></nix/store/si6dfvivbdxnnc13y9gxm6l27lqwcvsj-texlive-2022-env-texmfdist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 440700 bytes).
+Output written on main.pdf (9 pages, 564833 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

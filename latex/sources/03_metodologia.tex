@@ -2,6 +2,8 @@
 % TODO adicionar uma forma de comparar um hardware convencional(asics)
 Serão apresentados quatro cenários neste trabalho, que visam comparar o desempenho e capacidade de fluxo de dados na rede. Serão analizados roteadores \ac{ASIC} assim como roteadores rodando linux, com o intuito de comparar o desempenho da rede. 
 
+Uma avaliação de desempenho pode ser composta de testes que medem o desempenho de uma rede. Esse desempenho pode ser quantificado em vazão de dados, latência e se há ou não perda ou retrasmissão de pacotes. Tais métricas são importantes para podermos confirmar a saúde de uma rede e se ela está capaz de lidar com seus clientes. Uma rede que perde muitos pacotes ou que tem pouca vazão pode ser indício de \textit{bottleneck} por parte de um roteador. 
+
 O cenário I representará um ambiente de controle, ou seja, não possuirá roteadores. Ambos computadores se comunicaram utilizando um \textit{switch} TP-Link de 100 Megabit de banda. O cenário II e III será um ambiente com um roteador linux entre os computadores, sendo que no cenário II o roteador terá grande poder computacional comparado com o cenário III. Já no cenário IV será testado um roteador \ac{ASIC} rodando \textit{firmware} customizado.
 
 Cada cenário será testado com uma série de testes utilizando diversos tamanhos de datagramas UDP. Séra levado em conta \textit{throughput}, pacotes por segundo, latência e recursos consumidos. A ferramenta que será utilizada nestes testes será o iPerf3. Serão executados 10 testes para cada tamanho de datagrama por um período de 30 segundos.

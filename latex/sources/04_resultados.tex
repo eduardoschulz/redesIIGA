@@ -3,12 +3,8 @@ Nessa sessão será apresentado os ambientes dos cenários de testes, principalm
 \subsection{Equipamentos}
 
 Como explicado na seção \ref{Metodologia}, o testes serão realizados seguindo cenários com diversos equipamentos, que devem realizar funções diferentes dependendo do cenário selecionado.
-A coleta de métricas de consumo de processador, memória, entrada e saída de \textit{bits} pela interface de rede
-foram realizadas usando o \textit{software} Prometheus em conjunto com o Grafana para a visualização gráfica dos dados.
-
 \begin{table}[H]
 \centering
-\label{tab:freq-conf}
 \begin{tabular}{cc|}
 \hline
 \rowcolor[HTML]{DFDFDF} 
@@ -47,6 +43,7 @@ foram realizadas usando o \textit{software} Prometheus em conjunto com o Grafana
 \multicolumn{1}{|c|}{Lançamento}           & 2016    \\ \hline
 \end{tabular}
 \caption{Especificação dos Equipamentos}
+\label{tab:computadores}
 \end{table}
 %Para a realização dos cenários de testes foram criados \textit{testbeds} compostos por três computadores, um roteador e um \textit{switch}. 
 %\subsection{\textit{Testbed}}
@@ -70,26 +67,33 @@ No \textbf{cenários II e III}, o roteador um ip estático assim como o segundo 
 # No segundo computador
 sudo ip addr add 10.0.1.2/24 dev {iface}
 sudo ip route add 192.168.0.0/24 via 10.0.1.1 dev {iface}
+./iperf3.sh # Script de testes disponível no repositório do github. 
+\end{verbatim}
+
+\begin{verbatim}
+# No primeiro computador
+iperf3 -s --json output.json > output.json
 \end{verbatim}
 
 Já no \textbf{cenário IV} o roteador também foi configurado para receber um endereço dinâmico na porta \ac{WAN} e fixo na porta \ac{LAN}. Toda configuração foi feita pela interface gráfica \textit{web} disponibilizada pelo \textit{OpenWRT}. O segundo computador não precisou ser configurado pois o mesmo ganhou endereço \ac{IP} dinâmico pelo servidor \ac{DHCP} do roteador.
+
+Todos os dados coletados pelo iPerf3 foram dividos por cenários e por tamanho de datagrama e processados por \textit{scripts} em Python e gráficos foram gerados usando a biblioteca Matplotlib. Todos os \textit{scripts} e \textit{logs} estão disponíveis em \url{https://github.com/eduardoschulz/redesIIGA}.
 
 
 \subsection{Resultados}
 \subsubsection{\textit{Throughput}}
 
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{sources/fig-throughput.png}
 		\caption{\textit{Throughput} atingido com datagramas de tamanhos diferentes.}
     \label{fig:throughput}
 \end{figure}
 
-Como é possível notar na figura \ref{fig:throughput} o cenário de controle, isto é o I, possuio a maior taxa de transferência entre todos os cenários. Os cenários II e III tiveram resultados semelhantes porém, o II teve uma taxa ligeiramente superior nos datagramas maiores em comparação com o cenário III, isto é com uma variância maior também. Já o cenário IV teve o pior dos resultados registrados, com taxas de transferência inferior aos demais e com uma varianção elevada.
+Como é possível notar na figura \ref{fig:throughput} o cenário de controle, isto é o I, possui a maior taxa de transferência entre todos os cenários. Os cenários II e III tiveram resultados semelhantes porém, o II teve uma taxa ligeiramente superior nos datagramas maiores em comparação com o cenário III, isto é com uma variância maior também. Já o cenário IV teve o pior dos resultados registrados, com taxas de transferência inferior aos demais e com uma varianção elevada.
 
-\subsubsection{Número de Pacotes}
 
-\begin{figure}[H]
+\begin{figure}[t]
     \centering
     \includegraphics[width=0.9\linewidth]{sources/fig-pacotes.png}
     \caption{Número de datagramas enviados por segundo em cada teste realizado.}
@@ -118,11 +122,21 @@ Nesta figura \ref{fig:jitter} podemos analizar as médias assim como os \textit{
     \label{fig:perda}
 \end{figure}
 
-Nesta figura \ref{fig:perda} é apenas exposto a perda de pacotes acosionada no cenário IV. Os demais cenários não apresentaram perdas de pacotes significativas, isto é, perdas superiores a 1\%. É claramente visível que o roteador deste cenário não foi capaz de suportar tal carga, tendo casos que as perdas ultrapassam 67\%. 
+Nesta figura \ref{fig:perda} é apenas exposto a perda de pacotes ocosionada no cenário IV. Os demais cenários não apresentaram perdas de pacotes significativas, isto é, perdas superiores a 1\%. É claramente visível que o roteador deste cenário não foi capaz de suportar tal carga, tendo casos que as perdas ultrapassam 67\%. 
 
 É possível notar que o roteador teve maior dificuldade lidando com datagramas menores, isso se dá porque o maior custo computacional acontece na quebra do cabeçalho. Então em fluxos com datagramas menores mais pacotes são enviados e por consequencia mais pacotes precisam ser desmontados pelo roteador. Já com datagramas maiores o número de pacotes pode ser menor como é visto na figura\ref{fig:num pacotes}.
 
 
+\subsubsection{Consumo do Processador}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{sources/fig-cpu.png}
+    \caption{Consumo do Processador pelo cliente e servidor nos testes do iPerf3.}
+    \label{fig:cpu}
+\end{figure}
+
+Podemos ver um padrão claro, com excessão do cenário III, onde quanto menor o tamanho do datagrama maior o consumo de processador. Como comentado previamente é esperado esse resultado já que pacotes menores significa mais pacotes, logo, sendo necessário maior processamento por parte de todos os computadores envolvidos. O resultado do cenário III não era esperado pois, de longe o cliente neste cenário tinha o maior poder computacional como podemos ver nas figuras \ref{fig:cenarios} e na tabela \ref{tab:computadores}.
 
 
 
