@@ -1,81 +1,114 @@
-import numpy as np
+import json
 import matplotlib.pyplot as plt
-import matplotlib as mpl
+import numpy as np
 
-files = [
-    [
-        "../logs/oai/oai/iperf/cpu-ran.csv",
-        "../logs/srsran/oai/iperf/cpu-ran.csv",
-    ],
-    [
-        "../logs/oai/open5gs/iperf/cpu-ran.csv",
-        "../logs/srsran/open5gs/iperf/cpu-ran.csv",
-    ],
-    [
-        "../logs/oai/free5gc/iperf/cpu-ran.csv",
-        "../logs/srsran/free5gc/iperf/cpu-ran.csv",
-    ],
-]
-# how many samples to skip until the start of the experiment
-skip = [
-    [
-        15,
-        10,
-    ],
-    [
-        19,
-        14,
-    ],
-    [
-        14,
-        19,
-    ],
-]
-
-rans = ["OAI RAN", "srsRAN"]
-
-cores = [
-    "OAI CN",
-    "Open5GS",
-    "Free5GC",
-]
-
-def conv(x):
-    return float(x[:-1])
-
-def readfile(file: str, skip: int):
-    data = np.genfromtxt(file, delimiter=",", skip_header=skip, max_rows=40, usecols=[2], converters={2: conv})
-    return data
+# Sample data (replace with your actual data)
+data_size = ["128", "256", "512", "1024", "1280"]
 
 
-def build(save=True):
-    # there are 40 measurements total. They were taken every 15s
-    # so in total the test lasted 600s
-    x = np.arange(40) * 15 # the label locations
+#Cenario A
+#hostmean 100
+ALaptop100 = [45.823648387064964, 28.73299016638712, 17.314444135552815, 11.294907279831047, 10.055261616538782]
+#hoststd 100
+ALaptop100std = [1.6202182027141228, 1.5844426021027485, 0.7602128592781524, 0.6932299932218968, 0.3294088114531147]
+#hostmean 80
+ALaptop80 = [46.13366914947268, 28.540764009257707, 16.156411860519217, 10.302601667554594, 10.679728960491316]
+#hoststd 80 
+ALaptop80std = [1.32453357840576, 1.1912005965793218, 0.8357863500115387, 0.39855973788431853, 2.0544087147470287]
+#remotemean 100
+APi100 = [41.752857378680424, 31.02638516888304, 27.44488056880864, 17.280190933504173, 15.16432872175316]
+#remotestd 100
+APi100std = [13.132164630094865, 1.2334105633361836, 0.8802530366121856, 0.6149226637581423, 0.6046902029998305]
+#remotemean 80
+APi80 = [45.84027186926924, 32.09415017741776, 28.216343282743047, 17.11440143533167, 15.13876012195398]
+#remotestd 80
+APi80std = [0.8301338954044479, 2.154928218618167, 1.9916991398990456, 0.8090831129475716, 0.7470098161349468]
 
-    colors = ["#7EA16B", "#C3D898"]
-    fig, axes = plt.subplots(1, 3, layout='constrained')
+BLaptop100 = [46.647640135336744, 28.101291444620184, 17.345624062775315, 11.230459131382945, 9.710557093587154]
+BLaptop100std = [1.7047279980556898, 1.4005490540542678, 0.668677142857336, 0.4379388266740024, 0.2988976795425002]
+BLaptop80 = [46.70887987373846, 28.120168021480076, 15.84087458679534, 10.526975061132074, 10.15180900566578]
+BLaptop80std = [2.349059791378023, 1.0827156281018957, 0.9988618673245228, 0.8538692524560175, 1.0857983775043556]
+BPi100 = [50.731533053001584, 35.9192826203838, 32.23878991186948, 20.49493438342246, 17.186419214784507]
+BPi100std = [15.950099839169035, 0.25798021363643675, 1.088200933407355, 0.8210499872509297, 0.708356798715107]
+BPi80 = [55.86602443809433, 35.93918978442684, 33.19793925450603, 20.779348588470096, 16.515174052578487]
+BPi80std = [0.26313954975121173, 0.21581006268620537, 1.607131385002652, 2.15574720681597, 0.6733796345239951]
 
-    for tests, offsets, ax, core in zip(files, skip, axes, cores):
-        ax.set_ylim(0, 12)
-        for ran, color, test, offset in zip(rans, colors, tests, offsets):
-            data = readfile(test, offset)
-            rects = ax.plot(x, data, label=ran, color=color)
-        ax.set_xlabel(core, fontsize=12)
+CLaptop100 = [45.41458315881106, 28.512916384486886, 17.340127051644792, 11.04773728219757, 9.699355778619266]
+CLaptop100std = [2.8857074186055143, 0.8885633679928712, 0.7996862618491521, 0.6722781168055151, 0.6168088361849614]
+CLaptop80 = [45.7368633979045, 28.601006497615, 16.47764479137201, 9.76314169107565, 9.58399973345362]
+CLaptop80std = [1.069492593496428, 1.7657497193696334, 0.9116019807509926, 0.998805926596884, 0.5402611189844834]
+CXeon100 = [14.22754648622355, 9.62215818897575, 6.883506384940877, 6.090992275900731, 4.987407796485456]
+CXeon100std =[4.496806006567472, 0.07710229740558722, 0.1655082771580059, 0.12507020647792486, 0.051207743791524]
+CXeon80 = [15.978688066886313, 11.209493013269666, 100.6535264965303, 100.61227850690933, 100.62801030417825]
+CXeon80std = [15.978688066886313, 11.209493013269666, 100.6535264965303, 100.61227850690933, 100.62801030417825]
 
-# Add some text for labels, title and custom x-axis tick labels, etc.
-    fig.supylabel('Consumo de CPU (%)', fontsize=14)
-#axes[len(axes)//2].set_xlabel("Tempo (s)", fontsize=14)
-    axes[-1].legend(loc='upper right', ncols=2, fontsize=12)
-    fig.supxlabel("Tempo (s)", fontsize=14)
+DLaptop100 = [20.855494236311692, 19.867844249397006, 14.32253036182554, 10.628770201963874, 9.673483807297105]
+DLaptop100std = [1.3283533601733724, 0.8839788403637819, 2.4544901707470888, 0.8967414547511221, 0.43249067250931816]
+DLaptop80 = [20.829386621313827, 19.57076517935519, 14.72423069696995, 11.245094080872532, 10.359186439613216]
+DLaptop80std = [1.3126379079536876, 0.5587015496365889, 0.7261673622112924, 1.029677920308237, 1.5671929264631836]
+DPi100 =[51.17034566905414, 40.83975376748455, 32.017303318188404, 21.16927555703442, 17.136541783974174]
+DPi100std =[16.092643371399596, 8.53437497279222, 2.7195181783510813, 0.5797613003339033, 0.6091600968446184]
+DPi80 = [55.7509138325715, 36.09003631017386, 32.13583153767009, 20.878377392630373, 16.734556453727954]
+DPi80std =[0.5143843135032778, 0.2609022143613914, 2.173981924934655, 1.7853590723703257, 0.9064397580652642]
 
-#fig.set_tight_layout()
-    fig.set_size_inches(10.4, 4.2)
-#plt.show()
-    if save:
-        fig.savefig("figs/cpu.pdf", dpi=100)
 
-if __name__ == "__main__":
-    build(False)
-    mpl.use('QtAgg') 
-    plt.show()
+
+
+
+red = "#d73737"
+blue = "#6684e1"
+green = "#60ac39"
+purple = "#b854d4"
+
+
+
+fig, axs = plt.subplots(2, 2, figsize=(10, 10))
+# Create the plot
+#plt.figure(figsize=(12, 6))
+
+teorico100 = [100, 100, 100, 100, 100]
+
+
+# Plot data points with error bars
+axs[0, 0].errorbar(data_size, ALaptop80, yerr=ALaptop80std, fmt='o-', color=red, label='Servidor - 80% de Banda')
+axs[0, 0].errorbar(data_size, ALaptop100, yerr=ALaptop100std, fmt='o-', color=purple, label='Servidor - 100% de Banda')
+axs[0, 0].errorbar(data_size, APi80, yerr=APi80std, fmt='s-',color=blue, label='Cliente - 80% de Banda')
+axs[0, 0].errorbar(data_size, APi100, yerr=APi100std, fmt='s-',color=green, label='Cliente - 100% de Banda')
+
+axs[1, 0].errorbar(data_size, BLaptop80, yerr=BLaptop80std, fmt='o-', color=red, label='Servidor - 80% de Banda')
+axs[1, 0].errorbar(data_size, BLaptop100, yerr=BLaptop100std, fmt='o-', color=purple, label='Servidor - 100% de Banda')
+axs[1, 0].errorbar(data_size, BPi80, yerr=BPi80std, fmt='s-',color=blue, label='Cliente - 80% de Banda')
+axs[1, 0].errorbar(data_size, BPi100, yerr=BPi100std, fmt='s-',color=green, label='Cliente - 100% de Banda')
+
+axs[0, 1].errorbar(data_size, CLaptop80, yerr=CLaptop80std, fmt='o-', color=red, label='Servidor - 80% de Banda')
+axs[0, 1].errorbar(data_size, CLaptop100, yerr=CLaptop100std, fmt='o-', color=purple, label='Servidor - 80% de Banda')
+axs[0, 1].errorbar(data_size, CXeon80, yerr=BPi80std, fmt='s-',color=blue, label='Cliente - 80% de Banda')
+axs[0, 1].errorbar(data_size, CXeon100, yerr=BPi100std, fmt='s-',color=green, label='Cliente - 100% de Banda')
+
+
+axs[1, 1].errorbar(data_size, DLaptop80, yerr=DLaptop80std, fmt='o-', color=red, label='Servidor - 80% de Banda')
+axs[1, 1].errorbar(data_size, DLaptop100, yerr=DLaptop100std, fmt='o-', color=purple, label='Servidor - 100% de Banda')
+axs[1, 1].errorbar(data_size, DPi80, yerr=DPi80std, fmt='s-',color=blue, label='Cliente - 80% de Banda')
+axs[1, 1].errorbar(data_size, DPi100, yerr=DPi100std, fmt='s-',color=green, label='Cliente - 100% de Banda')
+#axs.ylabel('Throughput (Bytes por Segundo)')
+axs[0, 0].set_title('Cenário I')
+axs[1, 0].set_title('Cenário II')
+axs[0, 1].set_title('Cenário III')
+axs[1, 1].set_title('Cenário IV')
+# Plot mean lines
+for ax in axs.flat:
+    ax.set(xlabel='Tamanho do Datagrama UDP (Bytes)', ylabel='Uso de CPU(%)')
+
+
+# Set labels and title
+#plt.xlabel('Tamanho do Datagrama UDP (Bytes)')
+#plt.ylabel('Throughput Bytes por segundo')
+#plt.title('Resultados do Cenário A')
+
+# Add legend
+plt.legend()
+
+# Show the plot
+plt.grid(False)
+plt.tight_layout()
+plt.show()

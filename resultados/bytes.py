@@ -41,7 +41,7 @@ stdD80 = [7.203842082287303, 15.649233571002862, 21.81467263948479, 35.042696461
 red = "#d73737"
 blue = "#6684e1"
 green = "#60ac39"
-purple = "b854d4"
+purple = "#b854d4"
 
 
 
@@ -50,24 +50,30 @@ fig, axs = plt.subplots(2, 2, figsize=(10, 10))
 #plt.figure(figsize=(12, 6))
 
 teorico100 = [100, 100, 100, 100, 100]
-
+teorico80 = [80, 80, 80, 80, 80]
 
 # Plot data points with error bars
 axs[0, 0].errorbar(data_size, mediaA80, yerr=stdA80, fmt='o-', color=red, label='80% de Banda ')
 axs[0, 0].errorbar(data_size, mediaA100, yerr=stdA100, fmt='s-',color=blue, label='100% de Banda')
-axs[0, 0].errorbar(data_size, teorico100, yerr=0, fmt='s-',color=green, label='Teórico')
+axs[0, 0].errorbar(data_size, teorico80, yerr=0, fmt=':',color=green, label='Teórico 80% Banda')
+axs[0, 0].errorbar(data_size, teorico100, yerr=0, fmt=':',color=purple, label='Teórico 100% Banda')
 
 axs[1, 0].errorbar(data_size, mediaB80, yerr=stdB80, fmt='o-',color=red, label='80% de Banda ')
 axs[1, 0].errorbar(data_size, mediaB100, yerr=stdB100, fmt='s-',color=blue, label='100% de Banda')
-axs[1, 0].errorbar(data_size, teorico100, yerr=0, fmt='s-',color=green, label='Teórico')
+axs[1, 0].errorbar(data_size, teorico80, yerr=0, fmt=':',color=green, label='Teórico 80% Banda')
+axs[1, 0].errorbar(data_size, teorico100, yerr=0, fmt=':',color=purple, label='Teórico 100% Banda')
 
 axs[0, 1].errorbar(data_size, mediaC80, yerr=stdC80, fmt='o-',color=red, label='80% de Banda ')
 axs[0, 1].errorbar(data_size, mediaC100, yerr=stdC100, fmt='s-',color=blue, label='100% de Banda')
-axs[0, 1].errorbar(data_size, teorico100, yerr=0, fmt='s-',color=green, label='Teórico')
+axs[0, 1].errorbar(data_size, teorico80, yerr=0, fmt=':',color=green, label='Teórico 80% Banda')
+axs[0, 1].errorbar(data_size, teorico100, yerr=0, fmt=':',color=purple, label='Teórico 100% Banda')
 
 axs[1, 1].errorbar(data_size, mediaD80, yerr=stdD80, fmt='o-',color=red, label='80% de Banda ')
 axs[1, 1].errorbar(data_size, mediaD100, yerr=stdD100, fmt='s-',color=blue, label='100% de Banda')
-axs[1, 1].errorbar(data_size, teorico100, yerr=0, fmt='s-',color=green, label='Teórico')
+axs[1, 1].errorbar(data_size, teorico80, yerr=0, fmt=':',color=green, label='Teórico 80% Banda')
+axs[1, 1].errorbar(data_size, teorico100, yerr=0, fmt=':',color=purple, label='Teórico 100% Banda')
+
+
 
 #axs.ylabel('Throughput (Bytes por Segundo)')
 axs[0, 0].set_title('Cenário I')

@@ -15,40 +15,32 @@ files128080 = []
 
 def read_file(file):
     with open(file, "r") as file:
-        json_data = json.load(file)
-        return json_data
+        data = json.load(file)
+        return data 
 
 def conv(x):
-    return float(x['cpu_utilization_percent']['host_total'])
+    return (x['end']['cpu_utilization_percent']['host_total'])
 
-
-
-
-def get_cpu_laptop(x):
-    return float(x['']['host_total'])
-
-def get_cpu_client(x):
-    return float(x['cpu_utilization_percent']['remote_total'])
-
-def from_iter(x):
-    return np.fromiter(map(conv, x['end']), float)
-
-def from_end(x):
-    return np.fromiter(map(get_cpu_client, x['end']), float)
-
-
-
-
+def conv_remote(x):
+    return (x['end']['cpu_utilization_percent']['remote_total'])
 
 
 def create_dataset(files):
-
     listadearrays = []
     for i in files:
         for item in i:
-             print(from_iter(read_file(i)))
-#            listadearrays.append((lost_pkt_from(read_file(i))))
+            listadearrays.append((conv(read_file(i))))
+    
+    return listadearrays
 
+    
+def create_dataset_remote(files):
+    listadearrays = []
+    for i in files:
+        for item in i:
+            listadearrays.append((conv_remote(read_file(i))))
+    
+    return listadearrays
 
 
 
@@ -88,4 +80,84 @@ for i in range(91,99):
 
 
 
-create_dataset(files128080)
+
+
+hostmean = []
+hostmean.append(np.mean(create_dataset(files128100)))
+hostmean.append(np.mean(create_dataset(files256100)))
+hostmean.append(np.mean(create_dataset(files512100)))
+hostmean.append(np.mean(create_dataset(files1024100)))
+hostmean.append(np.mean(create_dataset(files1280100)))
+
+print("hostmean 100")
+print(hostmean)
+
+hoststd = []
+hoststd.append(np.std(create_dataset(files128100)))
+hoststd.append(np.std(create_dataset(files256100)))
+hoststd.append(np.std(create_dataset(files512100)))
+hoststd.append(np.std(create_dataset(files1024100)))
+hoststd.append(np.std(create_dataset(files1280100)))
+
+print("hoststd 100")
+print(hoststd)
+
+hostmean = []
+hostmean.append(np.mean(create_dataset(files12880)))
+hostmean.append(np.mean(create_dataset(files25680)))
+hostmean.append(np.mean(create_dataset(files51280)))
+hostmean.append(np.mean(create_dataset(files102480)))
+hostmean.append(np.mean(create_dataset(files128080)))
+
+print("hostmean 80")
+print(hostmean)
+
+hoststd = []
+hoststd.append(np.std(create_dataset(files12880)))
+hoststd.append(np.std(create_dataset(files25680)))
+hoststd.append(np.std(create_dataset(files51280)))
+hoststd.append(np.std(create_dataset(files102480)))
+hoststd.append(np.std(create_dataset(files128080)))
+
+print("hoststd 100")
+print(hoststd)
+
+remotemean = []
+remotemean.append(np.mean(create_dataset_remote(files128100)))
+remotemean.append(np.mean(create_dataset_remote(files256100)))
+remotemean.append(np.mean(create_dataset_remote(files512100)))
+remotemean.append(np.mean(create_dataset_remote(files1024100)))
+remotemean.append(np.mean(create_dataset_remote(files1280100)))
+
+print("remotemean 100")
+print(remotemean)
+
+remotestd = []
+remotestd.append(np.std(create_dataset_remote(files128100)))
+remotestd.append(np.std(create_dataset_remote(files256100)))
+remotestd.append(np.std(create_dataset_remote(files512100)))
+remotestd.append(np.std(create_dataset_remote(files1024100)))
+remotestd.append(np.std(create_dataset_remote(files1280100)))
+
+print("remotestd 100")
+print(remotestd)
+
+remotemean = []
+remotemean.append(np.mean(create_dataset_remote(files12880)))
+remotemean.append(np.mean(create_dataset_remote(files25680)))
+remotemean.append(np.mean(create_dataset_remote(files51280)))
+remotemean.append(np.mean(create_dataset_remote(files102480)))
+remotemean.append(np.mean(create_dataset_remote(files128080)))
+
+print("remotemean 80")
+print(remotemean)
+
+remotestd = []
+remotestd.append(np.std(create_dataset_remote(files12880)))
+remotestd.append(np.std(create_dataset_remote(files25680)))
+remotestd.append(np.std(create_dataset_remote(files51280)))
+remotestd.append(np.std(create_dataset_remote(files102480)))
+remotestd.append(np.std(create_dataset_remote(files128080)))
+
+print("remotestd 80")
+print(remotestd)
